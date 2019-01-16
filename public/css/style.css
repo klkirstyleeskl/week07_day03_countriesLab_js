@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+
+
+.country-flag{
+  width: 300px;
+}
+
+body{
+  background-color: #cccccc;
+  font-family: 'Coiny', cursive;
+  color: #666666;
+}
+
+h2{
+  font-size: 2em;
+}
