@@ -24,11 +24,16 @@ flag.src = country.flag
 flag.className = 'country-flag';
 this.container.appendChild(flag);
 
-const countryRegion = this.createElement('h3', `Region: ${country.region}`);
+const regionTitle = this.createElement('h3', 'Region:');
+this.container.appendChild(regionTitle);
+regionTitle.className = 'region';
+
+const countryRegion = this.createElement('h3', country.region);
 this.container.appendChild(countryRegion);
 
 const languageListTitle = this.createElement('h3', 'Languages:');
 this.container.appendChild(languageListTitle);
+languageListTitle.className = 'language';
 
 const countryLanguageList = this.createLanguageList(country.languages);
 this.container.appendChild(countryLanguageList);
