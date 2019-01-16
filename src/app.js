@@ -16,4 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('CountryDropDown', countryDropDown);
   countryDropDown.bindEvents();
 
+  const countryContainer = document.querySelector('div#country');
+  const countryView = new CountryView(countryContainer);
+  countryView.bindEvents();
+
 });
